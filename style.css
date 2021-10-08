@@ -2350,6 +2350,9 @@ body.light .pfeil-lwork {
         margin-right: 2px;
         margin-left: 2px;
     }
+    .gallery-image {
+    filter: grayscale(0%);
+    }
 }
 
 .section-x {
