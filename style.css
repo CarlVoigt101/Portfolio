@@ -400,8 +400,7 @@ body.light .nav-box {
 
 /* ================================================== */
 
-.site-footer
-{
+.site-footer{
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
@@ -698,6 +697,7 @@ body.light .main-pic2 {
     letter-spacing: 0.15rem;
     line-height: 1.7;
     margin-left: 295px;
+    display: block;
 }
 
 .center-wrap-contact {
@@ -714,8 +714,8 @@ body.light .main-pic2 {
 }
 
 .allehashtags {
-    margin-top: 50px;
-    width: 50%;
+    margin-top: 0px;
+    width: 100%;
 }
 
 /*down-arrow---------------------*/
@@ -2016,7 +2016,7 @@ body.light .pfeil-lwork {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 70px;
-      letter-spacing: 0.3rem;
+    letter-spacing: 0.3rem;
   }
     .latest-work-txt h1{
     font-size: 50px;
@@ -2050,8 +2050,11 @@ body.light .pfeil-lwork {
     margin-top: 0px;
   }
     .hashtags{
-        font-size: 16px;
+        font-size: 13px;
         margin: 0px;
+    }
+    body {
+        line-height: 120%;
     }
     .navbar-brand{
         height: 35px;
@@ -2099,7 +2102,7 @@ body.light .pfeil-lwork {
         transform: translate(-45%);
     }
     .section-grid {
-        height: 300vh;
+        height: 350vh;
         grid-template: repeat(12, 1fr) /repeat(1, 1fr);
         grid-gap: 30px;
         padding: 20px;
@@ -2216,7 +2219,7 @@ body.light .pfeil-lwork {
         grid-area: 8/ 1 /span 1/ span 1;
     }
     .section-visual{
-        height: 250vh;
+        height: 320vh;
         top:100px;
     }
     .container {
@@ -2331,7 +2334,22 @@ body.light .pfeil-lwork {
     
     .switch {
         display: none;
-    }   
+    } 
+    .x-back img {
+    width: 30px;
+	height: 30px;
+    }
+    .x-back-con img{
+    width: 30px;
+	height: 30px;
+    }
+    .contact-links{
+        line-height: 1.4;
+    }
+    .container-footer {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
 }
 
 .section-x {
@@ -2348,16 +2366,18 @@ body.light .pfeil-lwork {
         margin-right: 6%;
         margin-left: 6%;
 }
+
 p {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 200;
 }
 canvas {
-  display: block;
-   cursor: none;
+    cursor: none;
     position: absolute;
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: auto;
 }
 .center-wrap-2:hover {
     cursor: none;
@@ -2375,4 +2395,7 @@ canvas {
     transition: all 300ms linear;
     opacity: 0.5;
     cursor: none;
+}
+.element.style {
+    width: 100%;
 }
