@@ -1919,7 +1919,8 @@ body.light .wpf-txt img {
     font-size: 150px;
 }
 .pfeil-lwork {
-    width: 12px;
+    width: 13px;
+    
 }
 body.light .pfeil-lwork {
     -webkit-filter: invert(1);
@@ -2319,17 +2320,11 @@ body.light .pfeil-lwork {
        
     }
     .arrow-icon-w {
-        height: 40px;
-        width: 40px;
-        border: none;
-        bottom: 18px;
+display: none;
 }
 
     .arrow-icon-b {
-        height: 40px;
-        width: 40px;
-        border: none;
-        bottom: 18px;
+  display: none;
     }
     
     .switch {
