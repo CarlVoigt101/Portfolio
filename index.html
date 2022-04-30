@@ -151,6 +151,13 @@
 <!------------------------------------------------------------------------------->
         
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script><script  src="./script.js"></script>
+  <script> const countEl = document.getElementById('count');
 
+    updateVisitCount();
+    
+    function updateVisitCount(){
+        fetch('https://api.countapi.xyz/update/viewer/test2/?amount=1')
+        .then(res => res.json());
+    }</script>
     </body>
 </html>
