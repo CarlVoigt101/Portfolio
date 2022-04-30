@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Analytics</h2>
+
+    <div style="margin: 0 150px 150px 150px;">
+    <h5 style="margin-bottom: 0px;">Besucher: </h5>
+    <p style="margin-top: 0px;">seit 01.05.2022</p>
+    <h5 id="count" style="margin:5px">0</h5>
+    <button id="reset" style="  
+    background-color: #c84141;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;">reset</button>
+    </div>
+
+
+    <script> const countEl = document.getElementById('count');
+
+        updateVisitCount();
+        
+        function updateVisitCount(){
+            fetch('https://api.countapi.xyz/update/viewer/test2/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+                   countEl.innerHTML = res.value;
+            });
+        }</script>
+</body>
+</html>
