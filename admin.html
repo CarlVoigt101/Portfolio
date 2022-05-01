@@ -10,33 +10,92 @@
 <body>
     <h2>Analytics</h2>
 
-    <div style="margin: 0 150px 150px 150px;">
-    <h5 style="margin-bottom: 0px;">Besucher: </h5>
-    <p style="margin-top: 0px;">seit 01.05.2022</p>
-    <h5 id="count" style="margin:5px">0</h5>
-    <button id="reset" style="  
-    background-color: #c84141;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    font-size: 16px;">reset</button>
+
+    <div style="display: flex;">
+        <div style="margin: 0 50px 0 150px; width: 500px;">
+        <h5 style="margin: 0px;">Besucher: </h5>
+        <p style="margin-top: 0px;">seit 01.05.2022</p>
+        <h5 id="count" style="margin:5px">0</h5>
+        <button id="reset" style="  
+        background-color: #c84141;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;
+        font-size: 16px;">-1</button>
+        </div>
+
+    <div style="width: 600px; height: 200px;">
+        <canvas id="myChart" style="position: relative; display: flex;"></canvas>
+      </div>
     </div>
 
-
-    <script> const countEl = document.getElementById('count');
+    <script> 
+    var button = document.getElementById('reset');
+    const countEl = document.getElementById('count');
 
         updateVisitCount();
         
         function updateVisitCount(){
-            fetch('https://api.countapi.xyz/update/viewer/test2/?amount=1')
+            fetch('https://api.countapi.xyz/get/viewer/test2')
             .then(res => res.json())
             .then(res => {
                    countEl.innerHTML = res.value;
             });
-        }</script>
+        }
+        
+        button.addEventListener('click',minus);
+
+        function minus() {
+            fetch('https://api.countapi.xyz/update/viewer/test2?amount=-1')
+            .then(res => res.json())
+            .then(res => {
+                   countEl.innerHTML = res.value;
+            });
+        }
+
+
+        </script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+    const labels = [
+      'Mai',
+      'Juni',
+      'Juli',
+      'August',
+      'September',
+      'Oktober',
+    ];
+   
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+  
+    const config = {
+      type: 'line',
+      data: data,
+      options: {}
+    };
+  </script>
+
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    console.log(views);
+  </script> -->
+
 </body>
 </html>
