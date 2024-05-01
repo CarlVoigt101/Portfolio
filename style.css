@@ -87,7 +87,7 @@
 }
 body{
     font-family: 'Space Grotesk', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.65;
 	color: var(--grey);
@@ -1981,7 +1981,7 @@ body.light .wpf-txt img {
         width: 60%;
         float: left;
         z-index: 1;
-    /* margin-top: 8%; */
+    margin-top: 8%; 
     }
 .latest-work-txt h1{
     font-size: 150px;
