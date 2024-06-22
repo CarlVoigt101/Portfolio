@@ -6,18 +6,27 @@
         <meta name="description" content="Portfolio Website" />
         <meta name="author" content="Carl Voigt" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <meta property="og:title" content="Carl Voigt Portfolio">
+
+        <meta property="og:description" content="Portfolio Website von Carl Voigt">
+        <meta property="og:image" content="assets/Me.jpg">
+        <meta property="og:url" content="https://www.carlvoigt.com">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Carl Voigt Portfolio">
+        <meta name="twitter:description" content="Portfolio Website von Carl Voigt">
+        <meta name="twitter:image" content="assets/Me.jpg">
+
+
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
         <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
-        
-        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        
-        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/svg" href="/assets/LogoV20.svg">
     </head>
@@ -26,31 +35,31 @@
     
     <body>
        <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             
             <div class="switch">
 		      <div class="circle"></div>
 	           </div>
             
             <a class="navbar-brand" href="index.html">
-		      <img src="assets/LogoV28.png" alt="">
+		      <img src="assets/LogoV28.png" alt="Logo von Carl Voigt">
                 </a>
-           
+
             
                 <div class="nav-box">
                     </div>
             
                 <a class="menue" href="work.html">WORK</a>
                     <div class="pfeil-svg" >
-                        <img src="assets/PfeilWei%C3%9F.svg"> 
+                        <img src="assets/PfeilWei%C3%9F.svg" alt="Pfeil nach unten weiß"> 
                     </div>
                 <a class="menue" href="about.html">ABOUT</a>
                 <div class="pfeil-svg" >
-                        <img src="assets/PfeilWei%C3%9F.svg"> 
+                        <img src="assets/PfeilWei%C3%9F.svg" alt="Pfeil nach unten schwarz"> 
                 </div>
                 <a class="menue" href="contact.html">CONTACT</a>
                     <div class="pfeil-svg" style="margin-right: 0px;">
-                        <img src="assets/PfeilWei%C3%9F.svg" > 
+                        <img src="assets/PfeilWei%C3%9F.svg" alt="Pfeil nach unten schwarz"> 
                     </div>
             
             
@@ -77,7 +86,7 @@
       <a class="arrow-down-b" href="#sectionX"> 
                 <center><img class="arrow-icon-b" src="assets/Arrow-down-black.svg"></center> </a>
          
-            <img class="main-pic" src="assets/Me.jpg">
+            <img class="main-pic" src="assets/Me.jpg" alt=" Bild Carl Voigt">
      <div class="nav-box-2"> </div>
 
 	          
@@ -90,13 +99,12 @@
                     <a href="https://carlvoigt101.github.io/desaignexh/"><p><br><b>Hier geht's zum Projekt <img class="pfeil-lwork" src="assets/PfeilWei%C3%9F.svg"></b></p></a>
                 <!--<a href="https://docs.google.com/presentation/d/1LY5AND5p0KimdEACpvBI_wCwbYwbyN3o-hSXJJeobHU/edit?usp=sharing"><p><br><b>Präsentation <img class="pfeil-lwork" src="assets/PfeilWei%C3%9F.svg"></b></p></a>-->   
                 </div>
-                <img class="latest-work-img" src="assets/DSNGEXH.png">
-                
+                <img class="latest-work-img" src="assets/DSNGEXH.png" alt="Bild des Projekts DSNGEXH" loading="lazy">
                 
                 <a class="arrow-down-w" href="#footer"> 
-                <center><img class="arrow-icon-w" src="assets/Arrow-down-white.svg"></center> </a> 
+                <center><img class="arrow-icon-w" src="assets/Arrow-down-white.svg" alt="Pfeil nach unten weiß"></center> </a> 
                 <a class="arrow-down-b" href="#footer"> 
-                <center><img class="arrow-icon-b" src="assets/Arrow-down-black.svg"></center> </a>
+                <center><img class="arrow-icon-b" src="assets/Arrow-down-black.svg" alt="Pfeil nach unten schwarz"></center> </a>
                 
 	        </div>
 <!-- Lets work together-->
@@ -143,7 +151,7 @@
 </footer>
 <!------------------------------------------------------------------------------->
         
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
   <script> const countEl = document.getElementById('count');
 
     updateVisitCount();
