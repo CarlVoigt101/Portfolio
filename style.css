@@ -67,14 +67,19 @@
          url('fonts/space-grotesk-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('fonts/space-grotesk-v6-latin-700.svg#SpaceGrotesk') format('svg'); /* Legacy iOS */
   }
+
+  
   
 :root {
 	font-size: 20px;
 	--red: #da2c4d;
+    --orange: #F57A33;
+    --orange2: #e96e50;
 	--yellow: #f8ab37;
     --yellow2: #ffd461;
 	--green: #2ecc71;
-	--white: #ffffff;
+	--white: #fff;
+    --white-wolf: #dad7cd;
 	--grey-light: #f2f7f9;
 	--grey: #f8f8f8;
     --grey2: #dad8d8;
@@ -85,6 +90,11 @@
 	--black-blue-light-3: #4b4d64;
 	--black-light: #424455;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-family: 'Space Grotesk', sans-serif;
 	font-size: 18px;
@@ -116,7 +126,7 @@ body.light h1{
 	color: var(--black-blue);
 }
 body.light{
-	background-color: var(--white);
+	background-color: var(--white-wolf);
 }
 .navbar-brand{
 	height: 45px;
@@ -141,7 +151,7 @@ body.light{
 	height: calc(100% + 26px);
 	opacity: 0;
 	z-index: -1;
-	background-image: linear-gradient(260deg, var(--grey2), var(--grey));
+	background-image: linear-gradient(260deg, var(--white), var(--white-wolf));
 	animation: border-transform 10s linear infinite alternate forwards;
 	-webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -205,6 +215,7 @@ body.light .navbar-brand img {
 	display: block;
 	overflow: hidden;
 	height: 100vh;
+    padding: 2rem 1.75rem;
 }
 .center-wrap {
     position: absolute;
@@ -2425,9 +2436,7 @@ display: none;
     .gallery-image {
     filter: grayscale(0%);
     }
-    .nav-box-2 {
-        bottom: 120vw;
-    }
+
     
 }
 
